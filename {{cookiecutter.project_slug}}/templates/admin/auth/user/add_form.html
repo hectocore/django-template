@@ -1,0 +1,11 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block form_top %}
+  {% if not is_popup %}
+    <p>{% trans "First, enter a username and password. Then, you'll be able to edit more user options." %}<br>
+    {% trans "You must also enter a valid email address." %}</p>
+  {% else %}
+    <p>{% trans "Enter a username and password." %} {% trans "And enter a valid email address." %}</p>
+  {% endif %}
+{% endblock %}

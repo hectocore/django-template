@@ -1,0 +1,107 @@
+#header {
+    color: #fff;
+}
+
+#header, .module h2, .module caption, .inline-group h2 {
+    background: linear-gradient(60deg, #003366, #5b80b2);
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #fff;
+}
+
+div.breadcrumbs {
+    background-color: #5b80b2;
+    color: #fff;
+}
+
+a:link, a:visited {
+    color: #5b80b2;
+    text-decoration: none;
+}
+
+#user-tools a:focus, #user-tools a:hover {
+    text-decoration: none;
+    border-bottom-color: #fff;
+    color: #fff;
+}
+
+.object-tools a:focus, .object-tools a:hover {
+    background-color: #7494be;
+}
+
+a.active.selector-chooseall:focus, a.active.selector-clearall:focus,
+a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
+    color: #7494be;
+}
+
+a.active.selector-chooseall:focus, a.active.selector-chooseall:hover {
+    background-position: 100% -160px;
+}
+
+a.active.selector-clearall:focus, a.active.selector-clearall:hover {
+    background-position: 0 -128px;
+}
+
+
+/* FORM BUTTONS */
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: #5b80b2;
+    color: #fff;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active,
+.button:focus, input[type=submit]:focus, input[type=button]:focus,
+.button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background: #7494be;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: #395579;
+}
+
+.button.default:active, input[type=submit].default:active,
+.button.default:focus, input[type=submit].default:focus,
+.button.default:hover, input[type=submit].default:hover {
+    background: #496d9c;
+}
+
+/* CUSTOM SIGNATURE FOOTER */
+body:not(.login) #container {
+    position: relative;
+    min-height: 100vh;
+}
+
+body:not(.login) #content {
+    padding-bottom: 20px;
+}
+
+body:not(.login) #footer {
+    display: flex;
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: linear-gradient(60deg, #003366, #5b80b2);
+    color: #fff;
+    overflow: hidden;
+}
+
+#footer p {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+}
+
+#footer a, #footer a:visited {
+    color: #fff;
+    font-weight: bold;
+}
+
+body.login #footer {
+    margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(60deg, #003366, #5b80b2);
+}

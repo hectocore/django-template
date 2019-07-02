@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrahead %}
+  <link rel="stylesheet" type="text/css" href="{% static "css/django-admin.css" %}">
+{% endblock %}
+
+{% block footer %}
+  <div id="footer">
+    <p>Custom admin made with ❤️ by <a href="https://github.com/hectocore" target="_blank">Hector Corral</a></p>
+  </div>
+{% endblock %}
