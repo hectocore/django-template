@@ -105,3 +105,7 @@ body.login #footer {
     color: #fff;
     background: linear-gradient(60deg, #003366, #5b80b2);
 }
+
+div.calendar caption {
+    color: #fff;
+}
