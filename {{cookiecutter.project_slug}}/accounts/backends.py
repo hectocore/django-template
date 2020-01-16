@@ -5,13 +5,15 @@ from django.core.validators import validate_email
 
 class EmailModelBackend(ModelBackend):
     """
-    Override of ModelBackend.
-    Allows to authenticate using email or username.
+    Authenticates against settings.AUTH_USER_MODEL.
+    Override that allows to authenticate using either email or username.
     """
 
     def authenticate(self, request, username=None, password=None, **kwargs):
         if username is None:
             username = kwargs.get(UserModel.USERNAME_FIELD)
+        if username is None or password is None:
+            return
         try:
             try:
                 validate_email(username)

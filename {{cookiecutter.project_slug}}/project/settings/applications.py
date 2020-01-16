@@ -1,7 +1,7 @@
-# Applications
-# https://docs.djangoproject.com/en/2.2/ref/settings/#std:setting-INSTALLED_APPS
+# Application definition
+# https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-INSTALLED_APPS
 
-# Django Native Applications
+# Django native applications
 DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -25,5 +25,5 @@ CUSTOM_APPS = [
 INSTALLED_APPS = DJANGO_APPS + CONTRIB_APPS + CUSTOM_APPS
 
 
-# CONTRIB AND CUSTOM APPS CONFIG
-# Put bellow specific configurations of all non-django applications
+# Contrib and custom apps config
+# Put bellow all configurations specific to non-django applications

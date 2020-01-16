@@ -107,14 +107,17 @@ venv.bak/
 .idea/
 .idea_modules/
 
+# MacOS
+.DS_Store
+
 # Local development settings
-#  You can create a development.py.example if you want to share
-#  a default development config.
-settings/development.py
+# You can create a development.py.example if you want to share
+# a default development config.
+project/settings/development.py
 
 # Production settings
-#  For security reasons, those should never end up published
-settings/production.py
+# For security reasons, those should never end up published
+project/settings/production.py
 
 # Static files
 static/static_root/
